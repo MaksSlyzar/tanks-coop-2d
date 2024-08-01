@@ -1,0 +1,117 @@
+.RoomView {
+  width: 100%;
+  height: 90%;
+
+  .wrapper {
+    display: flex;
+    height: calc(100% - 40%);
+  }
+
+  &__Players {
+    margin: 10px 00px 0px 0px;
+    border: 1px solid $line-color;
+    padding: 10px;
+    width: 100%;
+
+    &-label {
+      color: White;
+    }
+
+    &-item {
+      font-size: 16px;
+      position: relative;
+      border-bottom: 2px $line-color solid;
+
+      img {
+        position: absolute;
+        height: 21px;
+        width: 21px;
+      }
+
+      .leader-icon {
+        right: 30px;
+      }
+
+      .ready-icon {
+        right: 0px;
+      }
+    }
+
+    &-list {
+      height: 100%;
+    }
+  }
+
+  &__SelectRole {
+    width: 200px;
+    padding: 5px;
+
+    &-label {
+      margin-bottom: 10px;
+    }
+
+    &-list {
+    }
+
+    &-item {
+      height: 20px;
+      border-bottom: 2px solid gray;
+      transition: 0.3s;
+      margin-bottom: 5px;
+    }
+
+    &-item:hover {
+      background-color: $line-color;
+      color: black;
+    }
+
+    .activated {
+      background-color: $line-color;
+      color: black;
+      transition: 2s;
+    }
+  }
+
+  &__exitRoom {
+    margin: 0px 10px 10px 0px;
+    button {
+      width: 100px;
+      color: white;
+    }
+  }
+
+  &__ReadyButton {
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+
+    button {
+      width: 150px;
+    }
+
+    .activated {
+      background-color: $line-color;
+      border: solid rgb(73, 73, 73) 3px;
+      color: black;
+      font-weight: 800;
+    }
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .RoomView {
+    width: 100%;
+
+    &__Players {
+      width: 70%;
+    }
+
+    &__SelectRole {
+      width: 28%;
+    }
+
+    .wrapper {
+      display: flex;
+    }
+  }
+}

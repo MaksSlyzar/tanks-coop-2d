@@ -1,0 +1,35 @@
+.Authorization {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 500px;
+
+  input {
+    width: 160px;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  button {
+    // background-color: rgb(0, 160, 172);
+    // width: 160px;
+    // height: 20px;
+  }
+
+  .header-auth {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.OpenFullScreenButton {
+  position: fixed;
+  top: 10px;
+  right: 0px;
+
+  button {
+  }
+}
